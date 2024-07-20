@@ -8,7 +8,7 @@ const songsController = {
     res.status(HTTP_SUCCESS_CODE).send(songs);
   },
   saveSongController: async (req, res, next) => {
-    const { name, description, artisId } = req.body;
+    const { name, description, artistId } = req.body;
 
     if (!name) {
       res.status(HTTPS_ERROR_CODE).send("Song information is required");
@@ -17,7 +17,7 @@ const songsController = {
     const savedSong = await songsService.saveSong({
       name,
       description,
-      artisId,
+      artistId,
     });
 
     res.status(HTTP_SUCCESS_CODE).send(savedSong);
