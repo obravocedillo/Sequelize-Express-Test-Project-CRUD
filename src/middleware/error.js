@@ -1,4 +1,4 @@
-const { HTTPS_ERROR_CODE } = require("../constants/main/server");
+const { HTTPS_ERROR_CODE } = require("../constants/server");
 
 const handleErrorsMiddleware = (err, req, res, next) => {
   // Default error message

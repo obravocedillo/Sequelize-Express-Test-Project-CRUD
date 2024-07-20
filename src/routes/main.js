@@ -1,6 +1,6 @@
 const express = require("express");
 
-const { HTTP_SUCCESS_CODE } = require("../constants/main/server");
+const { HTTP_SUCCESS_CODE } = require("../constants/server");
 
 const songsRouter = require("./songs");
 const artistsRouter = require("./artists");
