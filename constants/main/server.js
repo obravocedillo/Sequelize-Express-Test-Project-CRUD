@@ -1,0 +1,7 @@
+const HTTP_SUCCESS_CODE = 200;
+const HTTPS_ERROR_CODE = 500;
+
+module.exports = {
+  HTTP_SUCCESS_CODE,
+  HTTPS_ERROR_CODE,
+};
